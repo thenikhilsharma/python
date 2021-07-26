@@ -1,10 +1,8 @@
-class age:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
+class computer:
 
-  def myfunc(self):
-    print("Hello my name is " + self.name)
+  def config(self):
+    print("i5, 8gb, 1TB")
 
-p1 = age("Nikhil", 36)
-p1.myfunc()
+com1 = computer()
+
+print(type(com1))
