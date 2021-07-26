@@ -1,5 +1,6 @@
-L = [2,10,3,9,8]
-n = len(L)
+n = int(input())
+L = list(map(int, input().split()))
+
 for i in range (n):
     k = L[i]
     j = i-1
@@ -8,4 +9,7 @@ for i in range (n):
         j = j-1
     else:
         L[j+1] = k
-        print("Sorted List:", L)
+
+if n//2 != 0:
+    z = int(n / 2)
+    print(L[z])

@@ -5,8 +5,6 @@ for x in range(no):
     row = list(map(int, input().split()))
     matrix.append(row)
 
-print (matrix)
-
 primaryDiagonal = 0
 secondaryDiagonal = 0
 
@@ -20,9 +18,9 @@ for m in range(len(matrix)):
         if m+n == (no-1):
             secondaryDiagonal = secondaryDiagonal + matrix[m][n]\
 
-difference = primaryDiagonal - secondaryDiagonal
-
-if difference < 0:
-    print(-difference)
+if primaryDiagonal < secondaryDiagonal:
+    difference = secondaryDiagonal - primaryDiagonal
 else:
-    print(difference)
+    difference = primaryDiagonal - secondaryDiagonal
+
+print(difference)

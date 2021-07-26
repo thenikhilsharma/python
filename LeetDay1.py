@@ -1,7 +1,9 @@
-arr = list(map(int, input("nums = ").split()))
+nums = list(map(int, input("nums = ").split()))
+target = int(input())
 
-id(arr)
+print(nums, target)
 
-
-
-print(arr)
+for i in range(len(nums)):
+    for j in range(len(nums)):
+        if nums[i]+nums[j] == target:
+            print(nums[i],nums[j])
