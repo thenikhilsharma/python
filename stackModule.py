@@ -1,4 +1,4 @@
-def push(input, stack):             # function to enter an element
+def push(stack, input):             # function to enter an element
     stack.append(input)
 
 def pop(stack):                     # function to remove an element
@@ -8,11 +8,10 @@ def peek(stack):                    # function to display the element
     print(stack)
 
 def length(stack):
-    lenStack = len(stack)           # length of stack
-    return lenStack
+    return len(stack)           # length of stack
 
 def flowCheck(stack):
-    if length(stack) == 0:          # assigning the value of under flow
+    if len(stack) <= 0:          # assigning the value of under flow
         underFLOW = 1
         print("Stack is underflow")
     else:
