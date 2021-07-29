@@ -1,4 +1,5 @@
 # SOLVED
+# python program hackerank certificate prg
 
 def common(arri):
 
