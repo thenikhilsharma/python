@@ -1,8 +1,9 @@
-class computer:
+class person:
+  def __init__ (self, name, age):
+    self.name = name
+    self.age = age
 
-  def config(self):
-    print("i5, 8gb, 1TB")
+p1 = person("John", 36)
 
-com1 = computer()
-
-print(type(com1))
+print(p1.name)
+print(p1.age)
