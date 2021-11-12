@@ -6,7 +6,7 @@ list2.append([6, 8]) #adds as a single element
 print(list2)
 list2.extend([7, 'more_example']) #adds as different elements
 print(list2)
-list2.insert(1, 'insert') #add element i
+list2.insert(1, 'insert') #add element at i
 print(list2)
 
 #deleting elements

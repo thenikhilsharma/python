@@ -1,4 +1,4 @@
-import stackModule
+import stack
 
 n = int(input())
 

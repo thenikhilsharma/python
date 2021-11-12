@@ -1,9 +1,15 @@
-class person:
-  def __init__ (self, name, age):
-    self.name = name
-    self.age = age
+class parent:
+  def func(self):
+    print('one')
+  
+class parent2:
+  def func2(self):
+    print('two')
 
-p1 = person("John", 36)
 
-print(p1.name)
-print(p1.age)
+class child(parent, parent2):
+  def func3(self):
+    print("three")
+
+ob = child()
+ob.func3()

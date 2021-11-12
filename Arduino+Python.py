@@ -1,4 +1,4 @@
-import serial #Serial imported for Serial communication
+'''import serial #Serial imported for Serial communication
 import time #Required to use delay functions
  
 ArduinoSerial = serial.Serial('com3',4800) #Create Serial port object called arduinoSerialData
@@ -21,4 +21,4 @@ while 1: #Do this forever
     if (var == '0'): #if the value is 0
         ArduinoSerial.write('0') #send 0
         print ("LED turned OFF")
-        time.sleep(1)
+        time.sleep(1)'''

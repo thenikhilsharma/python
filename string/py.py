@@ -15,7 +15,7 @@ if further_spaces_del == "Y":
         st = st.replace("   ", " ")
     print(st)
 else:
-    print("Your are damn straight forward")
+    print("You are damn straight forward")
 
 fnd_string = input("Which Word do you want to find\n")
 print(st.find(fnd_string)+1)

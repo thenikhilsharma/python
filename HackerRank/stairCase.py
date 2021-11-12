@@ -7,4 +7,4 @@ for i in range(n,0,-1):
         if j<i:
             print(" ",end="")
         elif j>=i:
-            print("*",end="")
+            print("#",end="")
