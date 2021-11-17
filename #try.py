@@ -1,3 +1,33 @@
-a,b,c = 1,1,1
-lis=[a,b,c]
-print(lis)
+# Matrix Script in Python - Hacker Rank Solution
+# Python 3
+#!/bin/python3
+# Matrix Script in Python - Hacker Rank Solution START
+import math
+import os
+import random
+import re
+import sys
+
+first_multiple_input = input().rstrip().split()
+
+n = int(first_multiple_input[0])
+m = int(first_multiple_input[1])
+
+matrix = []
+
+for _ in range(n):
+    matrix_item = input()
+    matrix.append(matrix_item)
+
+# start   
+matrix = list(zip(*matrix))
+
+sample = str()
+
+for words in matrix:
+    for char in words:
+        sample += char
+print(sample)
+       
+print(re.sub(r'(?<=\w)([^\w\d]+)(?=\w)', ' ', sample)) 
+# Matrix Script in Python - Hacker Rank Solution END

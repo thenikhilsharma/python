@@ -1,14 +1,10 @@
-import pickle as pk
+file = open('example.txt','r+')
 
-f = open("file.dat", "wb")
-'''while True:
-    str = input("Enter line ")
-    f.write(str)
-    f.write("\n")
-    ch = input("Want to add more line Y/N ")
-    if ch == 'N':
-        break
-print("Lines added to the file ")'''
+#file.write("This is the write command, w mode\n")
+#file.write("it allows us to write in a parcticular file, w mode\n")
+#file.write("This will append this line, a mode\n")
+print(file.read())
+print(file.tell())    #current pos of curser
+file.seek(0)          #gets cursor to initial pos
 
-d1 = {"Name":"Nikhil", "Class":12}
-pk.dump(d1, f)
+file.close()
