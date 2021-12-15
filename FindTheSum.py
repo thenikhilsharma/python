@@ -6,5 +6,3 @@ for i in range (n):
     total.append(arr)
 
 name = input()
-
-if name == 
