@@ -1,3 +1,6 @@
-f = open("D:\\textFILE.txt", "r")
-print(f.readlines(1))
+f = open("file.txt", "r")
+print(f.read(5))
+print(f.read(5))
+print(f.readline())
+print(f.readlines())
 f.close()

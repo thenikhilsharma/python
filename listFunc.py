@@ -39,3 +39,6 @@ print(list2.count(10)) #find count of the elements
 print(sorted(list2)) #print sorted list but not change original
 list2.sort(reverse=True) #sort original list
 print(list2)
+
+#list1, list2 = [123, 'xyz'], [456, 'abc']
+#print(cmp(list1, list2))

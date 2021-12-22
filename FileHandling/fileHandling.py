@@ -1,4 +1,4 @@
-file = open('example.txt','r+')
+file = open('file.txt','r+')
 
 #file.write("This is the write command, w mode\n")
 #file.write("it allows us to write in a parcticular file, w mode\n")

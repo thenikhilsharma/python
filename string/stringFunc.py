@@ -19,7 +19,6 @@ print(string.lower())           #convert to lower case
 x = "Bro"
 y = "Sena"
 z = x+y
-
 print(z)
 
 #replication
