@@ -1,10 +1,8 @@
-import sys
-import collections
-sys.stdout = open('output.txt', 'w')
-sys.stdin = open('input.txt', 'r')
+import sys, math
 
-c = collections.Counter()
-print ('Initial :', c)
+sys.stdout = open('D:\\git repository\\thenikhilsharma_python\\CP\\output.txt', 'w')
+sys.stdin = open('D:\\git repository\\thenikhilsharma_python\\CP\\input.txt', 'r')
 
-c.update('abcdaab')
-print ('Sequence:', c)
+for t in range(1, int(input())+1):
+    n = int(input())
+    citations = list(map(int, input().split()))

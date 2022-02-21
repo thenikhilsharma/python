@@ -1,17 +1,25 @@
-#time limit exceeded in one tc
 #RMNTREV
 
-for ct in range(int(input())):
-    n, k = map(int, input().split())
-    sdash = input()
-    sub_string = list(sdash[0:k])
-    sub_string2 = list(sdash[k:])
-    
-    for i in range(k):
-        sub_string.reverse()
-        temp = sub_string[len(sub_string)-1]
-        sub_string2.insert(0,temp)
-        del sub_string[len(sub_string)-1]
-
-    ans = ''.join(sub_string2)
-    print(ans)
+for _ in range(int(input())):
+    size, kk = [*map(int, input().strip().split())]
+    st = input().strip()
+    vec = ['nope' for i in range(kk)] + list(st[kk: size])
+    num = kk
+    num -= 1
+    check = True
+    for i in range(kk):
+        # num = k - 1
+        if not check:
+            vec[num] = st[i]
+            num += 2
+        if check:
+            vec[num] = st[i]
+            num -= 2
+        if num == -2:
+            num = 1
+            check = False
+        elif num == -1:
+            num = 0
+            check = False
+    ret = ''.join(vec)
+    print(ret)
