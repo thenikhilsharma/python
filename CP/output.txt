@@ -1,3 +1,3 @@
-Case #1: Mollaristan is ruled by Bob.
-Case #2: Auritania is ruled by Alice.
-Case #3: Zizily is ruled by nobody.
+Case #1: 300000 200000 300000 200000
+Case #2: IMPOSSIBLE
+Case #3: 699508 148041 178147 -25696
