@@ -5,31 +5,24 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def index(request):
-    #return HttpResponse("HI")
     return render(request, 'index.html')
 
-def analyse(request):
+def search_profile(request):
     #get the text
-    djtext = request.GET.get('text', 'default')
-    removepunc = request.GET.get('removepunc', 'default')
+    search_text = request.GET.get('search_text', 'default')
+    #removepunc = request.GET.get('removepunc', 'default')
+    print(search_text)
+    if search_text[0] == "@":
+        
+        username = search_text
+        params = {'bio':'18 Y.O', 'username':username}
 
-    print(djtext, removepunc)
-    if removepunc == 'on':
-        punctuation = '''{}:"<>?_+)(*&^%$#@![];',./-='''
-        analysed = ""
-        for char in djtext:
-            if char not in punctuation:
-                analysed += char
-
-        params = {'purpose':'remove Punctutaions', 'analysed_text':analysed}
-
-        #analyse the text
-        return render(request, 'analyse.html', params)
+        return render(request, 'search_profile.html', params)
     else:
         return HttpResponse("Error")
 
-#def capfirst(request):
-#    return HttpResponse("capitalise punc")
+def profile(request):
+    return render(request, 'profile.html')
 
 #def newlineremove(request):
 #    return HttpResponse("newline remove")
